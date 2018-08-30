@@ -4,7 +4,7 @@ Clustering of time series gene expression data
 
 
 ```{r,eval=FALSE,warning=FALSE,message=FALSE}
-biocLite("ctsGE")
+BiocManager::install("ctsGE")
 ```
 **OR**
 

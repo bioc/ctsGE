@@ -47,8 +47,9 @@ library(rmarkdown)
 
 
 ```{r,eval=FALSE,warning=FALSE,message=FALSE}
-source("https://bioconductor.org/biocLite.R")
-biocLite("ctsGE")
+if (!requireNamespace("BiocManager", quietly=TRUE))
+    install.packages("BiocManager")
+BiocManager::install("ctsGE")
 ```
 
 # Workflow of clustering with ctsGE
